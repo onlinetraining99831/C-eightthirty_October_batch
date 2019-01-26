@@ -80,6 +80,12 @@ namespace ClassLibrary1.Tests
             extenttest.Log(Status.Pass, testdata["custname"] + " - Customer is added in the table");
         }
 
+        [Test]
+        public void test_name()
+        {
+            Console.WriteLine("UPload to GIT");
+        }
+
 
         public static object[][] getdata()
         {
