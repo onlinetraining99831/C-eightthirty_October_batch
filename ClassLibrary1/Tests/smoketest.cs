@@ -84,6 +84,7 @@ namespace ClassLibrary1.Tests
         public void test_name()
         {
             Console.WriteLine("UPload to GIT");
+            Console.WriteLine("Changes made by user 2");
         }
 
 
