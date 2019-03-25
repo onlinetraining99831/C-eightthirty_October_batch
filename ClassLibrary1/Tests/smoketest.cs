@@ -18,7 +18,7 @@ namespace ClassLibrary1.Tests
     {
 
         // [SetUp]
-        [OneTimeSetUp]
+       // [OneTimeSetUp]
         public void initialize()
         {
             // Console.WriteLine("Initialize the test....");
@@ -36,7 +36,7 @@ namespace ClassLibrary1.Tests
             
         }
 
-        [Test,Description("verify view all products page is loaded correctly or not.")]
+       // [Test,Description("verify view all products page is loaded correctly or not.")]
         public void verify_all_products_page()
         {
             extenttest = extentreport.CreateTest(TestContext.CurrentContext.Test.Name.ToString());
@@ -48,7 +48,7 @@ namespace ClassLibrary1.Tests
         //[TestCase("10","Nathan","KKPT","Hyderabad","Telangana","500500","1234432112344321","10/20")]
         //[TestCase("20", "James", "KKPT", "Hyderabad", "Telangana", "500501", "1234432112344321", "10/20")]
 
-        [Test,TestCaseSource("getdata")]
+       // [Test,TestCaseSource("getdata")]
         public void verify_inserting_new_order(string qty, string customer, string stname, string city,
                                  string state, string zip, string card, string expiry)
         {
@@ -61,7 +61,7 @@ namespace ClassLibrary1.Tests
             Assert.IsTrue(Page.Orderspage.isorderprocessedcorrectly(),"Order is not processed correctly");
         }
 
-        [Test]
+      //  [Test]
         public void verifyregister()
         {
             extenttest = extentreport.CreateTest(TestContext.CurrentContext.Test.MethodName.ToString());
@@ -101,7 +101,7 @@ namespace ClassLibrary1.Tests
             return data;
         }
 
-        [TearDown]
+      //  [TearDown]
         public void testcasestatus()
         {
             string testname = TestContext.CurrentContext.Test.MethodName.ToString();
